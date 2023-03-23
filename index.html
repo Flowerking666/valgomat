@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="banner">
+            <img src="venstrelogo.png" alt="Venstre logo">
+        </div>
+        <div class="Title">
+            <h1>VALGOMAT</h1>
+            <h1>Hvor enig er du med venstre?</h1>
+        </div>
+        <div class="witheBox" id="div1">
+            <div class="question">
+                <h2>Første spørsmål, lengde av dette spøsmålet er omtrent så langt som  de andre spørsmålene kommer til å være.</h2>
+            </div>
+            <div class="options">
+                <button class="option" id="addFive" onclick="toggleDiv(2)">
+                    <h2>Svar alternativ 1</h2>
+                </button>
+                <button class="option" id="subFive" onclick="toggleDiv(2)">
+                    <h2>Svar alternativ 2</h2>
+                </button>
+                <button class="option" id="addThree" onclick="toggleDiv(2)">
+                    <h2>Svar alternativ 3</h2>
+                </button>
+                <button class="option" id="subThree" onclick="toggleDiv(2)">
+                    <h2>Svar alternativ 4</h2>
+                </button>
+            </div>
+        </div>
+        <div class="witheBox" id="div2" style="display:none">
+            <div class="question">
+                <h2>Andre spørsmål, lengde av dette spøsmålet er omtrent så langt som det andre spørsmålet var og det de andre er.</h2>
+            </div>
+            <div class="options">
+                <button class="option" onclick="toggleDiv(3)">
+                    <h2>Svar alternativ 1 for spørsmål to</h2>
+                </button>
+                <button class="option" onclick="toggleDiv(3)">
+                    <h2>Svar alternativ 2 for spørsmål to</h2>
+                </button>
+                <button class="option" onclick="toggleDiv(3)">
+                    <h2>Svar alternativ 3 for spørsmål to</h2>
+                </button>
+                <button class="option" onclick="toggleDiv(3)">
+                    <h2>Svar alternativ 4 for spørsmål to</h2>
+                </button>
+            </div>
+        </div>
+        <div class="witheBox" id="div3" style="display:none">
+            <div class="question">
+                <h2> spørsmål, lengde av dette spøsmålet er omtrent så langt som det andre spørsmålet var og det de andre er.</h2>
+            </div>
+            <div class="options">
+                <button class="option">
+                    <h2>Svar alternativ 1 for spørsmål tre</h2>
+                </button>
+                <button class="option">
+                    <h2>Svar alternativ 2 for spørsmål tre</h2>
+                </button>
+                <button class="option">
+                    <h2>Svar alternativ 3 for spørsmål tre</h2>
+                </button>
+                <button class="option">
+                    <h2>Svar alternativ 4 for spørsmål tre</h2>
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>Valgomat Venstre</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -10,62 +11,198 @@
             <h1>VALGOMAT</h1>
             <h1>Hvor enig er du med venstre?</h1>
         </div>
-        <div class="witheBox" id="div1">
+        <div class="witheBox" id="question1">
             <div class="question">
-                <h2>Første spørsmål, lengde av dette spøsmålet er omtrent så langt som  de andre spørsmålene kommer til å være.</h2>
+                <h2>Hva mener du om legaliseringen av marjiuana? </h2>
             </div>
             <div class="options">
-                <button class="option" id="addFive" onclick="toggleDiv(2)">
-                    <h2>Svar alternativ 1</h2>
+                <button class="option" id="addFive" onclick="toggleDiv(2); addPoints(5)">
+                    <h2>Det burde være lovlig på lik linje som alkohol </h2>
                 </button>
-                <button class="option" id="subFive" onclick="toggleDiv(2)">
-                    <h2>Svar alternativ 2</h2>
+                <button class="option" id="subFive" onclick="toggleDiv(2); addPoints(10)">
+                    <h2>Det burde være lovlig til medisinsk bruk </h2>
                 </button>
-                <button class="option" id="addThree" onclick="toggleDiv(2)">
-                    <h2>Svar alternativ 3</h2>
+                <button class="option" id="addThree" onclick="toggleDiv(2); addPoints(3)">
+                    <h2>Holde reglene som nå hvor det er ulovlig </h2>
                 </button>
-                <button class="option" id="subThree" onclick="toggleDiv(2)">
-                    <h2>Svar alternativ 4</h2>
+                <button class="option" id="subThree" onclick="toggleDiv(2); addPoints(1)">
+                    <h2>Gjøre reglene enda strengere </h2>
                 </button>
             </div>
         </div>
-        <div class="witheBox" id="div2" style="display:none">
+        <div class="witheBox" id="question2" style="display:none">
             <div class="question">
-                <h2>Andre spørsmål, lengde av dette spøsmålet er omtrent så langt som det andre spørsmålet var og det de andre er.</h2>
+                <h2>Hva mener du om fraværsgrensen? </h2>
             </div>
             <div class="options">
-                <button class="option" onclick="toggleDiv(3)">
-                    <h2>Svar alternativ 1 for spørsmål to</h2>
+                <button class="option" onclick="toggleDiv(3); addPoints(10)">
+                    <h2>Fjerne grensen helt </h2>
                 </button>
-                <button class="option" onclick="toggleDiv(3)">
-                    <h2>Svar alternativ 2 for spørsmål to</h2>
+                <button class="option" onclick="toggleDiv(3); addPoints(7)">
+                    <h2>Gjøre den mindre steng</h2>
                 </button>
-                <button class="option" onclick="toggleDiv(3)">
-                    <h2>Svar alternativ 3 for spørsmål to</h2>
+                <button class="option" onclick="toggleDiv(3); addPoints(3)">
+                    <h2>Hold den som den er</h2>
                 </button>
-                <button class="option" onclick="toggleDiv(3)">
-                    <h2>Svar alternativ 4 for spørsmål to</h2>
+                <button class="option" onclick="toggleDiv(3); addPoints(1)">
+                    <h2>Gjøre den strengere</h2>
                 </button>
             </div>
         </div>
-        <div class="witheBox" id="div3" style="display:none">
+        <div class="witheBox" id="question3" style="display:none">
             <div class="question">
-                <h2> spørsmål, lengde av dette spøsmålet er omtrent så langt som det andre spørsmålet var og det de andre er.</h2>
+                <h2>Hva synes du om egenansatte og pensjon? </h2>
             </div>
             <div class="options">
-                <button class="option">
-                    <h2>Svar alternativ 1 for spørsmål tre</h2>
+                <button class="option" onclick="toggleDiv(4); addPoints(10)">
+                    <h2>Egenansatte burde ha like rettigheter angående pensjon og sykepenger </h2>
                 </button>
-                <button class="option">
-                    <h2>Svar alternativ 2 for spørsmål tre</h2>
+                <button class="option" onclick="toggleDiv(4); addPoints(3)">
+                    <h2>Kommune- og statsansatte burde ha bedre rettigheter angående pensjon og sykepenger </h2>
                 </button>
-                <button class="option">
-                    <h2>Svar alternativ 3 for spørsmål tre</h2>
+                <button class="option" onclick="toggleDiv(4); addPoints(3)">
+                    <h2>Privatansatte burde ha best pensjonsordning </h2>
                 </button>
-                <button class="option">
-                    <h2>Svar alternativ 4 for spørsmål tre</h2>
+                <button class="option" onclick="toggleDiv(4); addPoints(5)">
+                    <h2>Angår ikke meg</h2>
                 </button>
             </div>
+        </div>
+        <div class="witheBox" id="question4" style="display:none">
+            <div class="question">
+                <h2>Hva mener du om arbeidstiden? </h2>
+            </div>
+            <div class="options">
+                <button class="option" onclick="toggleDiv(5); addPoints(1)">
+                    <h2>Vi burde forlenge arbeidstiden </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(5); addPoints(5)">
+                    <h2>Den er fin som den er nå </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(5); addPoints(10)">
+                    <h2>Vi burde forkorte arbeidstiden </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(5); addPoints(5)">
+                    <h2>Angår ikke meg</h2>
+                </button>
+            </div>
+        </div>
+        <div class="witheBox" id="question5" style="display:none">
+            <div class="question">
+                <h2>Hva mener du om abort (nå er det valgfritt til uke 12)? </h2>
+            </div>
+            <div class="options">
+                <button class="option" onclick="toggleDiv(6); addPoints(10)">
+                    <h2>Vi burde øke uke grensen </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(6); addPoints(1)">
+                    <h2>Vi burde minke uke grensen </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(6); addPoints(5)">
+                    <h2>Den burde forbli som den er nå </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(6); addPoints(5)">
+                    <h2>Angår ikke meg</h2>
+                </button>
+            </div>
+        </div>
+        <div class="witheBox" id="question6" style="display:none">
+            <div class="question">
+                <h2>Hva mener du om olje og gass?  </h2>
+            </div>
+            <div class="options">
+                <button class="option" onclick="toggleDiv(7); addPoints(1)">
+                    <h2>Vi burde lete etter enda mer olje </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(7); addPoints(3)">
+                    <h2>Vi burde fortsette som vi har gjort før med å lete etter olje </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(7); addPoints(7)">
+                    <h2>Sakte slutte å lete og hente opp olje over en lengere periode </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(7); addPoints(10)">
+                    <h2>Slutte helt med en gang</h2>
+                </button>
+            </div>
+        </div>
+        <div class="witheBox" id="question7" style="display:none">
+            <div class="question">
+                <h2>Hva mener du om det norsek helsevesenet?   </h2>
+            </div>
+            <div class="options">
+                <button class="option" onclick="toggleDiv(8); addPoints(5)">
+                    <h2>Lege hjelp burde være gratis for alle </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(8); addPoints(10)">
+                    <h2>Legehjelp burde være gratis til 18 år </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(8); addPoints(5)">
+                    <h2>Legehjelp burde holde seg som nå hvor det er gratis til 16 år </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(8); addPoints(1)">
+                    <h2>Legehjelp burde koste penger for alle </h2>
+                </button>
+            </div>
+        </div>
+        <div class="witheBox" id="question8" style="display:none">
+            <div class="question">
+                <h2>Hva mener du om utrydningstruede arter som ulv og gaupe? </h2>
+            </div>
+            <div class="options">
+                <button class="option" onclick="toggleDiv(9); addPoints(5)">
+                    <h2>Vi burde fjerne dem fra Norge helt </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(9); addPoints(10)">
+                    <h2>Kan drepe opptil en kvote vert år </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(9); addPoints(5)">
+                    <h2>De burde vernes</h2>
+                </button>
+                <button class="option" onclick="toggleDiv(9); addPoints(1)">
+                    <h2>Angår ikke meg </h2>
+                </button>
+            </div>
+        </div>
+        <div class="witheBox" id="question9" style="display:none">
+            <div class="question">
+                <h2>Hva mener du om International samhandling? </h2>
+            </div>
+            <div class="options">
+                <button class="option" onclick="toggleDiv(10); addPoints(5)">
+                    <h2>Vi burde få mindre kontakt med andre land </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(10); addPoints(10)">
+                    <h2>Vi burde fortsette som nå og ikke øke eller minke kontakt </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(10); addPoints(5)">
+                    <h2>Vi burde endre reglene slik at det blir enklere å samhandle med andre land</h2>
+                </button>
+                <button class="option" onclick="toggleDiv(10); addPoints(5)">
+                    <h2>Angår ikke meg </h2>
+                </button>
+            </div>
+        </div>
+        <div class="witheBox" id="question10" style="display:none">
+            <div class="question">
+                <h2>Hva mener du om skatt? </h2>
+            </div>
+            <div class="options">
+                <button class="option" onclick="toggleDiv(11); addPoints(1)">
+                    <h2>Vi burde fjerne skatten helt </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(11); addPoints(10)">
+                    <h2>Vi burde senke skatten </h2>
+                </button>
+                <button class="option" onclick="toggleDiv(11); addPoints(5)">
+                    <h2>Vi burde holde den som den er nå</h2>
+                </button>
+                <button class="option" onclick="toggleDiv(11); addPoints(5)">
+                    <h2>Vi burde øke satten enda mer </h2>
+                </button>
+            </div>
+        </div>
+        <div class="witheBox" id="question11" style="display:none">
+            <div class="question"><h2>Du er <span id="poeng">0</span>% enig med venstre</h2></div>
         </div>
         <script src="script.js"></script>
     </body>

@@ -1,3 +1,15 @@
+#normal{
+    margin: auto;
+    text-align: left;
+    width: 90%;
+}
+#box{
+    margin: 8%;
+}
+#logo{
+    height: 60%;
+    text-align: center;
+}
 body{
     background-color:#006666;
     color: #FFFFFF;
@@ -26,6 +38,17 @@ img{
     width: 75%;
     min-height: 63%;
     border-radius: 25px;
+    text-align: center;
+}
+.infoBox{
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    width: 75%;
+    border-radius: 25px;
+    text-align: center;
 }
 .question{
     text-align: center;
@@ -37,9 +60,25 @@ h2{
     color: #006666;
     font-weight: lighter;
 }
+h3{
+    color: #006666;
+    font-weight: lighter;  
+}
 .options{
     margin: auto;
     width: 60%;
+}
+.btnValgomat{
+    margin: auto;
+    width: 20%;
+}
+.btnVal{
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
 }
 .option{
     width: 100%;
@@ -54,4 +93,7 @@ h2{
 
 .option:hover {
     background-color: #00666680;
+}
+.hedline{
+    color: #006666;
 }
